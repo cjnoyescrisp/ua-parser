@@ -456,9 +456,9 @@ test_cases:
     patch_minor:
 
   - user_agent_string: 'Nokia201/2.0 (11.21) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (Java; U; en-us; nokia201) UCBrowser8.3.0.154/70/355/UCWEB Mobile'
-    family: 'Other'
-    major:
-    minor:
+    family: 'J2ME/MIDP'
+    major: '2'
+    minor: '1'
     patch:
     patch_minor:
 
@@ -470,16 +470,16 @@ test_cases:
     patch_minor:
 
   - user_agent_string: 'J2ME/UCWEB7.0.3.45/139/7682'
-    family: 'Other'
+    family: 'J2ME/MIDP'
     major:
     minor:
     patch:
     patch_minor:
 
   - user_agent_string: 'PantechP7040/JLUS04042011 Browser/Obigo/Q05A OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1'
-    family: 'Other'
-    major:
-    minor:
+    family: 'J2ME/MIDP'
+    major: 2
+    minor: 1
     patch:
     patch_minor:
 
@@ -554,16 +554,16 @@ test_cases:
     patch_minor:
 
   - user_agent_string: 'SAMSUNG-C3053/1.0 Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0'
-    family: 'Other'
+    family: 'J2ME/MIDP'
     major:
     minor:
     patch:
     patch_minor:
 
   - user_agent_string: 'Mozilla/5.0 (LG-T500 AppleWebkit/531 Browser/Phantom/V2.0 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1)'
-    family: 'Other'
-    major:
-    minor:
+    family: 'J2ME/MIDP'
+    major: '2'
+    minor: '1'
     patch:
     patch_minor:
 
@@ -1037,9 +1037,9 @@ test_cases:
     patch_minor:
 
   - user_agent_string: 'Spice S6005/WAP2.0 IAC/M6226 Profile/MIDP-2.0 Configuration/CLDC-1.1'
-    family: 'Other'
-    major:
-    minor:
+    family: 'J2ME/MIDP'
+    major: '2'
+    minor: '0'
     patch:
     patch_minor:
 
@@ -2022,4 +2022,24 @@ test_cases:
     minor: '0'
     patch: '2'
     patch_minor:
-
+    
+  - user_agent_string: 'Opera/9.80 (J2ME/MIDP; Opera Mini/4.0.10031/28.3126; U; en) Presto/2.8.119 Version/11.10'
+    family: 'J2ME/MIDP'
+    major: 
+    minor: 
+    patch: 
+    patch_minor:
+   
+  - user_agent_string: 'UCWEB/2.0(Java; U; MIDP-2.0; id; samsung-gt-s3850) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile UNTRUSTED/1.0'
+    family: 'Java/MIDP'
+    major: '2'
+    minor: '0'
+    patch:
+    patch_minor:
+    
+  - user_agent_sgtring: 'YelpWebView/1.0 iphone/5_1_1 YelpApp/7.1.0 (x-screen-size 2.0;)'
+    family: 'iOS'
+    major: '5'
+    minor: '1'
+    patch: '1'
+    patch_minor:

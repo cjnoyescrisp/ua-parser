@@ -768,6 +768,13 @@ os_parsers:
     os_replacement: 'iOS'
 
   ##########
+  # Yelp Iphone app
+  ##########
+  YelpWebView/1.0 iphone/6_0_1 YelpApp/7.3.0 (x-screen-size 2.0;)
+  - regex 'iphone/(\d+)_(\d+)_(\d+)
+    os_replacement: 'iOS'
+  
+  ##########
   # Chrome OS
   # if version 0.0.0, probably this stuff:
   # http://code.google.com/p/chromium-os/issues/detail?id=11573
@@ -854,6 +861,16 @@ os_parsers:
   - regex: '(VRE);'
 
   ##########
+  # J2ME
+  ##########
+  - regex: 'J2ME'
+    os_replacement: 'J2ME/MIDP'
+  - regex: 'MIDP-(\d+)\.(\d+)'
+    os_replacement: 'J2ME/MIDP'
+  - regex: 'Java; U;'
+    os_replacement: 'Java'
+
+  ##########
   # Generic patterns
   # since the majority of os cases are very specific, these go last
   ##########
@@ -873,7 +890,7 @@ os_parsers:
   - regex: '(Linux)(?:[ /](\d+)\.(\d+)(?:\.(\d+))?)?'
   - regex: 'SunOS'
     os_replacement: 'Solaris'
-
+    
 device_parsers:
   ##########
   # incomplete!
