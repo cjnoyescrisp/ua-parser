@@ -925,7 +925,9 @@ device_parsers:
   - regex: '(ADR[A-Za-z0-9]+)'
     device_replacement: 'HTC $1'
   - regex: '(HTC)'
-
+  - regex: '(Amaze[ _][0-9a-zA-Z_-]*)'
+    device_replacement: 'HTC $1'
+    
   # Tesla Model S
   - regex: '(QtCarBrowser)'
     device_replacement: 'Tesla Model S'
@@ -1117,9 +1119,11 @@ device_parsers:
     device_replacement: 'Alcatel ONE TOUCH $1'
   - regex: 'ALCATEL (ONE TOUCH [A-Za-z0-9]+)'
     device_replacement: 'Alcatel $1'
-  - regex: 'ALCATEL (one touch [A-Za-z0-9]+)'
+  - regex: 'ALCATEL[_ ](one touch [A-Za-z0-9]+)'
     device_replacement: 'Alcatel $1'
-  - regex: 'ALCATEL ([A-Za-z0-9]+)'
+  - regex: 'ALCATEL_one_touch_([A-Za-z0-9]+)'
+    device_replacement: 'Alcatel ONE TOUCH $1'
+  - regex: 'ALCATEL[_ ]([A-Za-z0-9]+)'
     device_replacement: 'Alcatel $1'
   ##########
   # Amoi
@@ -1225,7 +1229,10 @@ device_parsers:
     device_replacement: 'LG $1'
   - regex: 'LG([A-Za-z0-9]+)'
     device_replacement: 'LG $1'
-
+  - regex: 'LG Optimus ([A-Za-z0-9]*)'
+    device_replacement: 'LG Optimus $1'
+  - regex: 'Optimus ([A-Za-z0-9]*)'
+    device_replacement: 'LG Optimus $1'
   ##########
   # kin
   ##########
