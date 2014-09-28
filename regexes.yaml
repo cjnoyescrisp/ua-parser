@@ -864,9 +864,9 @@ os_parsers:
   # J2ME
   ##########
   - regex: 'J2ME'
-    os_replacement: 'J2ME/MIDP'
+    os_replacement: 'J2ME\/MIDP'
   - regex: 'MIDP-(\d+)\.(\d+)'
-    os_replacement: 'J2ME/MIDP'
+    os_replacement: 'J2ME\/MIDP'
   - regex: 'Java; U;'
     os_replacement: 'Java'
 
@@ -1016,6 +1016,10 @@ device_parsers:
   - regex: 'Nokia ([A-Za-z0-9\-]+)'
     device_replacement: 'Nokia $1'
   - regex: 'Lumia ([A-Za-z0-9\-]+)'
+    device_replacement: 'Lumia $1'
+  - regex: 'Lumia([A-Za-z0-9\-]+)'
+    device_replacement: 'Lumia $1'
+  - regex: 'Lumia-([A-Za-z0-9\-]+)'
     device_replacement: 'Lumia $1'
   - regex: 'Symbian'
     device_replacement: 'Nokia'
@@ -1168,7 +1172,10 @@ device_parsers:
     device_replacement: 'Huawei $1'
   - regex: 'vodafone([A-Za-z0-9]+)'
     device_replacement: 'Huawei Vodafone $1'
-
+  - regex: 'HUAWEI ([A-Za-z0-9]+)'
+    device_replacement: 'Huawei $1'
+  - regex: 'HW-HUAWE':
+    device_replacement: 'HW-HUAWE'
   ##########
   # i-mate
   ##########
@@ -1242,6 +1249,10 @@ device_parsers:
   - regex: ' (Droid2| )'
     device_replacement: 'Motorola $1'
   - regex: ' (DROID2| )'
+    device_replacement: 'Motorola $1'
+  - regex: '(XT[0-9+)'
+    device_replacement: 'Motorola $1'
+  - regex: '(RAZR [A-Za-z0-9 ]*)'
     device_replacement: 'Motorola $1'
     
   ##########
@@ -1321,7 +1332,7 @@ device_parsers:
   - regex: 'Android[\- ][\d]+\.[\d]+; ([A-Za-z0-9 _-]+) '
   - regex: 'Android[\- ][\d]+\.[\d]+\.[\d]+; [^;]+; ([A-Za-z0-9\.\/_-]+) '
   - regex: 'Android[\- ][\d]+\.[\d]+; [^;]+; ([A-Za-z0-9\.\/_-]+) '
-  
+    
   ##########
   # Generic Smart Phone
   ##########
@@ -1339,6 +1350,16 @@ device_parsers:
     device_replacement: 'Generic Feature Phone'
   - regex: '^(talk|teli|topl|tosh|up.b|upg1|utst|v400|v750|veri|vk\-v|vk40|vk50|vk52|vk53|vm40|vx98|virg|vite|voda|vulc|w3c |w3c\-|wapj|wapp|wapu|wapm|wig |wapi|wapr|wapv|wapy|wapa|waps|wapt|winc|winw|wonu|x700|xda2|xdag|yas\-|your|zte\-|zeto|aste|audi|avan|blaz|brew|brvw|bumb|ccwa|cell|cldc|cmd\-|dang|eml2|fetc|hipt|http|ibro|idea|ikom|ipaq|jbro|jemu|jigs|keji|kyoc|kyok|libw|m\-cr|midp|mmef|moto|mwbp|mywa|newt|nok6|o2im|pant|pdxg|play|pluc|port|prox|rozo|sama|seri|smal|symb|treo|upsi|vx52|vx53|vx60|vx61|vx70|vx80|vx81|vx83|vx85|wap\-|webc|whit|wmlb|xda\-|xda_)'
     device_replacement: 'Generic Feature Phone'
+
+  ##########
+  # J2ME devices
+  ##########
+  - regex: '\(Java; U; [^;]+; ([^\)]+)\)'
+    device_replacement: 'J2me Device $1'
+  - regex: '(Java; U; MIDP-2\.[0-1]; [^;]+; ([^\)]+)\)'
+    device_replacement: 'J2me Device $1'
+  - regex: 'J2ME\/MIDP'
+    device_replacement: 'Generic J2me Device'
 
   ##########
   # Spiders (this is hack...)
