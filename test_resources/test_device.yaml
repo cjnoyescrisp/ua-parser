@@ -7,7 +7,7 @@ test_cases:
     family: 'Alcatel OH5'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; U; Android 4.0.3; en-us; Amaze_4G Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30'
-    family: 'Amaze_4G'
+    family: 'HTC Amaze 4G'
 
   - user_agent_string: 'Opera/9.80 (BlackBerry; Opera Mini/7.0.31437/28.3030; U; en) Presto/2.8.119 Version/11.10'
     family: 'BlackBerry'
@@ -436,10 +436,10 @@ test_cases:
     family: 'Motorola DROID2'
 
   - user_agent_string: 'Mozilla/5.0 (Java; U; en-us; gt-s5233w) AppleWebKit/530.13 (KHTML, like Gecko) UCBrowser/8.6.0.199/70/352/UCWEB Mobile UNTRUSTED/1.0'
-    family: 'J2me device gt-s5233w'
+    family: 'J2me Device gt-s5233w'
 
   - user_agent_string: 'UCWEB/2.0 (Java; U; MIDP-2.0; es-LA; samsung-sgh-t528g) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile UNTRUSTED/1.0'
-    family: 'J2me device samsung-sgh-t528g'
+    family: 'J2me Device samsung-sgh-t528g'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; Android 4.4.4; Optimus G Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36'
     family: 'LG Optimus G'

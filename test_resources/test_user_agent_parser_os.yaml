@@ -478,8 +478,8 @@ test_cases:
 
   - user_agent_string: 'PantechP7040/JLUS04042011 Browser/Obigo/Q05A OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1'
     family: 'J2ME/MIDP'
-    major: 2
-    minor: 1
+    major: '2'
+    minor: '1'
     patch:
     patch_minor:
 
@@ -555,8 +555,8 @@ test_cases:
 
   - user_agent_string: 'SAMSUNG-C3053/1.0 Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0'
     family: 'J2ME/MIDP'
-    major:
-    minor:
+    major: '2'
+    minor: '0'
     patch:
     patch_minor:
 
@@ -1030,9 +1030,9 @@ test_cases:
     patch_minor:
 
   - user_agent_string: 'SonyEricssonS600i/R4AB Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1'
-    family: 'Other'
-    major:
-    minor:
+    family: 'J2ME/MIDP'
+    major: '2'
+    minor: '0'
     patch:
     patch_minor:
 
@@ -2031,15 +2031,10 @@ test_cases:
     patch_minor:
    
   - user_agent_string: 'UCWEB/2.0(Java; U; MIDP-2.0; id; samsung-gt-s3850) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile UNTRUSTED/1.0'
-    family: 'Java/MIDP'
+    family: 'J2ME/MIDP'
     major: '2'
     minor: '0'
     patch:
     patch_minor:
     
-  - user_agent_sgtring: 'YelpWebView/1.0 iphone/5_1_1 YelpApp/7.1.0 (x-screen-size 2.0;)'
-    family: 'iOS'
-    major: '5'
-    minor: '1'
-    patch: '1'
-    patch_minor:
+ 
