@@ -651,7 +651,7 @@ os_parsers:
   ##########
   - regex: '(Tizen)/(\d+)\.(\d+)'
 
-  ##########
+ ##########
   # Mac OS
   # @ref: http://en.wikipedia.org/wiki/Mac_OS_X#Versions
   # @ref: http://www.puredarwin.org/curious/versions
@@ -768,13 +768,6 @@ os_parsers:
     os_replacement: 'iOS'
 
   ##########
-  # Yelp Iphone app
-  ##########
-  YelpWebView/1.0 iphone/6_0_1 YelpApp/7.3.0 (x-screen-size 2.0;)
-  - regex 'iphone/(\d+)_(\d+)_(\d+)
-    os_replacement: 'iOS'
-  
-  ##########
   # Chrome OS
   # if version 0.0.0, probably this stuff:
   # http://code.google.com/p/chromium-os/issues/detail?id=11573
@@ -864,9 +857,9 @@ os_parsers:
   # J2ME
   ##########
   - regex: 'J2ME'
-    os_replacement: 'J2ME\/MIDP'
-  - regex: 'MIDP-(\d+)\.(\d+)'
-    os_replacement: 'J2ME\/MIDP'
+    os_replacement: 'J2ME/MIDP'
+  - regex: '(MIDP)-(\d+)\.(\d+)'
+    os_replacement: 'J2ME/MIDP'
   - regex: 'Java; U;'
     os_replacement: 'Java'
 
@@ -925,7 +918,9 @@ device_parsers:
   - regex: '(ADR[A-Za-z0-9]+)'
     device_replacement: 'HTC $1'
   - regex: '(HTC)'
-  - regex: '(Amaze[ _][0-9a-zA-Z_-]*)'
+  - regex: 'Amaze_([0-9a-zA-Z_-]*)'
+    device_replacement: 'HTC Amaze $1'
+  - regex: '(Amaze [0-9a-zA-Z_-]*)'
     device_replacement: 'HTC $1'
     
   # Tesla Model S
@@ -1178,7 +1173,7 @@ device_parsers:
     device_replacement: 'Huawei Vodafone $1'
   - regex: 'HUAWEI ([A-Za-z0-9]+)'
     device_replacement: 'Huawei $1'
-  - regex: 'HW-HUAWE':
+  - regex: 'HW-HUAWE'
     device_replacement: 'HW-HUAWE'
   ##########
   # i-mate
@@ -1219,6 +1214,8 @@ device_parsers:
     device_replacement: 'LG $1'
   - regex: 'LGE VX([A-Za-z0-9]+)'
     device_replacement: 'LG $1'
+  - regex: 'LG Optimus ([A-Za-z0-9]*)'
+    device_replacement: 'LG Optimus $1'
   - regex: 'LG ([A-Za-z0-9]+)'
     device_replacement: 'LG $1'
   - regex: 'LGE LG\-AX([A-Za-z0-9]+)'
@@ -1229,8 +1226,6 @@ device_parsers:
     device_replacement: 'LG $1'
   - regex: 'LG([A-Za-z0-9]+)'
     device_replacement: 'LG $1'
-  - regex: 'LG Optimus ([A-Za-z0-9]*)'
-    device_replacement: 'LG Optimus $1'
   - regex: 'Optimus ([A-Za-z0-9]*)'
     device_replacement: 'LG Optimus $1'
   ##########
@@ -1257,7 +1252,7 @@ device_parsers:
     device_replacement: 'Motorola $1'
   - regex: ' (DROID2| )'
     device_replacement: 'Motorola $1'
-  - regex: '(XT[0-9+)'
+  - regex: '(XT[0-9]q+)'
     device_replacement: 'Motorola $1'
   - regex: '(RAZR [A-Za-z0-9 ]*)'
     device_replacement: 'Motorola $1'
@@ -1361,11 +1356,11 @@ device_parsers:
   ##########
   # J2ME devices
   ##########
+  - regex: '\(Java; U; MIDP-2\.[0-1]; [^;]+; ([^\)]+)\)'
+    device_replacement: 'J2me Device $1'
   - regex: '\(Java; U; [^;]+; ([^\)]+)\)'
     device_replacement: 'J2me Device $1'
-  - regex: '(Java; U; MIDP-2\.[0-1]; [^;]+; ([^\)]+)\)'
-    device_replacement: 'J2me Device $1'
-  - regex: 'J2ME\/MIDP'
+  - regex: 'J2ME/MIDP'
     device_replacement: 'Generic J2me Device'
 
   ##########
